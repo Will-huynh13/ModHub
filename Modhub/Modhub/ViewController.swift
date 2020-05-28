@@ -27,14 +27,13 @@ class ViewController: UIViewController {
 }
 // end of UIViewController
 
-extension ViewController: UITableViewDelegate {
+extension ViewController: UITableViewDataSource, UITableViewDelegate{
+    // this function is for the Delegate part
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // this function will handle user interaction when they select a cell
         print(items)
-    }
-}
-
-extension ViewController: UITableViewDataSource {
-    // needs 2 func
+      }
+    
+    // this is part of the data source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // this function will return the number of items in the array
         return items.count
     }
@@ -47,4 +46,21 @@ extension ViewController: UITableViewDataSource {
         
         return cell
     }
+    // this function is enabling the user to edit the row
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    // this is the code to delete
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{ // this code will execute if we are deleting something
+            items.remove(at: indexPath.row)
+            partsList.beginUpdates()
+            partsList.deleteRows(at: [indexPath], with: .automatic)
+            NumParts.text = String(items.count)
+            partsList.endUpdates()
+        }
+    }
+    
+    
 }
