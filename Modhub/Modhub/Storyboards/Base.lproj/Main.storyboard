@@ -36,12 +36,15 @@
                                         <fragment content="Add Parts">
                                             <attributes>
                                                 <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="13" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cAV-2q-thv" kind="show" id="kkr-OL-kTl"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cyT-lJ-c5k" userLabel="Parts Lable">
                                 <rect key="frame" x="49" y="614" width="194" height="85.5"/>
@@ -141,6 +144,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+        <!--input-->
+        <scene sceneID="Id0-IQ-vf4">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="input" storyboardName="AddingPartsFromUser" referencedIdentifier="input" id="cAV-2q-thv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ybv-da-1GL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtL-vX-exZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="370"/>
         </scene>
     </scenes>
 </document>
