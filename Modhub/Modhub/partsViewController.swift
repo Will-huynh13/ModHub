@@ -19,21 +19,25 @@ class partsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    var name = "" // initialize a variable that stores the part name
+
     var price  = "" // this is a variable that stores the price
     
     // this is the done button for the adding parts
 
     @IBAction func done(_ sender: UIButton) {
-        if Partname.text == "" { // error checking if the string is empty
-           let alert =  UIAlertController(title: "Error!", message: "Part name must be filled out", preferredStyle: .alert)
+        if Partname.text == "" || Price.text == ""{ // error checking if the string is empty
+           let alert =  UIAlertController(title: "Error!", message: "All fields must be filled out", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         } else{
+            price = Price.text! // storing the price to be converted to a Double
+            let newCost = Double(price) // converting to double
             // if it is not an empty string, then continue
             items.append(Partname.text!)
+            cost.append(newCost!) // adding it to the array.
             print("I am adding shit to the items array")
             print(items)
+            print(cost)
         }
 
     }

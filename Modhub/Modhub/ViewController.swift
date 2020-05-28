@@ -8,14 +8,15 @@
 
 import UIKit
 
-// this
+// this is the array that stores the parts
 var items: [String] = []
+var cost: [Double] = [] // this array is storing all the prices for each part
 
 class ViewController: UIViewController {
     // this is the table view on the main screen 
     @IBOutlet weak var partsList: UITableView!
-
     @IBOutlet weak var NumParts: UILabel! // this is the label for the number of parts
+    @IBOutlet weak var IndividualPartsCost: UILabel! // this is the label for Individual parts
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
     // this function is for the Delegate part
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // this function will handle user interaction when they select a cell
-        print(items)
+        IndividualPartsCost.text = "$" + String(cost[indexPath.row])
       }
     
     // this is part of the data source
@@ -54,11 +55,14 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     // this is the code to delete
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{ // this code will execute if we are deleting something
-            items.remove(at: indexPath.row)
+            items.remove(at: indexPath.row) // removes from parts array
+            cost.remove(at: indexPath.row) // remove from cost array
             partsList.beginUpdates()
             partsList.deleteRows(at: [indexPath], with: .automatic)
             NumParts.text = String(items.count)
+            IndividualPartsCost.text = "0"
             partsList.endUpdates()
+            print("Checking to see if price is removed \(cost)")
         }
     }
     
