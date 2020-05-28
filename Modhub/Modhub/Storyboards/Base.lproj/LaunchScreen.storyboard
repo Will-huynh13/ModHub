@@ -15,26 +15,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ModHub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-KX-Cwk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="r5i-eE-UpU">
+                                <rect key="frame" x="108" y="393" width="198" height="110.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CIvic" translatesAutoresizingMaskIntoConstraints="NO" id="843-XW-I5Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="XdP-uW-fNz"/>
+                                            <constraint firstAttribute="width" constant="198" id="fD0-VW-xZ8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="79J-Bj-FTu">
+                                        <rect key="frame" x="0.0" y="90" width="198" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ModzHub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-KX-Cwk">
+                                                <rect key="frame" x="11" y="0.0" width="176" height="20.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RS9-KX-Cwk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8ss-zQ-0TX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RS9-KX-Cwk" secondAttribute="trailing" id="Dqg-En-QJZ"/>
-                            <constraint firstItem="RS9-KX-Cwk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FBG-aE-AqH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RS9-KX-Cwk" secondAttribute="bottom" id="ck9-si-amy"/>
+                            <constraint firstItem="r5i-eE-UpU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9tV-or-2Sf"/>
+                            <constraint firstItem="r5i-eE-UpU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EhS-hV-4nv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CIvic" width="400" height="264"/>
+    </resources>
 </document>
