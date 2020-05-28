@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F92E92D247BA524007F8A04 /* partsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92E92C247BA524007F8A04 /* partsViewController.swift */; };
 		8F99EB602473878600932837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99EB5F2473878600932837 /* AppDelegate.swift */; };
 		8F99EB622473878600932837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99EB612473878600932837 /* SceneDelegate.swift */; };
 		8F99EB642473878600932837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99EB632473878600932837 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F92E92C247BA524007F8A04 /* partsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partsViewController.swift; sourceTree = "<group>"; };
 		8F99EB5C2473878600932837 /* Modhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F99EB5F2473878600932837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F99EB612473878600932837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,15 +58,24 @@
 		8F99EB5E2473878600932837 /* Modhub */ = {
 			isa = PBXGroup;
 			children = (
+				8F99EB75247507CB00932837 /* Storyboards */,
 				8F99EB5F2473878600932837 /* AppDelegate.swift */,
 				8F99EB612473878600932837 /* SceneDelegate.swift */,
 				8F99EB632473878600932837 /* ViewController.swift */,
-				8F99EB652473878600932837 /* Main.storyboard */,
+				8F92E92C247BA524007F8A04 /* partsViewController.swift */,
 				8F99EB682473878900932837 /* Assets.xcassets */,
-				8F99EB6A2473878900932837 /* LaunchScreen.storyboard */,
 				8F99EB6D2473878900932837 /* Info.plist */,
 			);
 			path = Modhub;
+			sourceTree = "<group>";
+		};
+		8F99EB75247507CB00932837 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F99EB6A2473878900932837 /* LaunchScreen.storyboard */,
+				8F99EB652473878600932837 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F99EB642473878600932837 /* ViewController.swift in Sources */,
+				8F92E92D247BA524007F8A04 /* partsViewController.swift in Sources */,
 				8F99EB602473878600932837 /* AppDelegate.swift in Sources */,
 				8F99EB622473878600932837 /* SceneDelegate.swift in Sources */,
 			);
