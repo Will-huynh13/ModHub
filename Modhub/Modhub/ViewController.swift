@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         partsList.dataSource = self
         NumParts.text = String(items.count) // counting the number of parts
         IndividualPartsCost.text = "$0"
-        TotalCost.text = "$" + String(total)
+        TotalCost.text = "$0"
         print("Checking items array \(items)")
         print("Checking cost array \(cost)")
         
