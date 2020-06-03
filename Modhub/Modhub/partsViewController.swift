@@ -33,11 +33,15 @@ class partsViewController: UIViewController {
         }else{
             price = Price.text! // storing the price to be converted to a Double
             let newCost = Double(price) // converting to double
-            items.append(Partname.text!)
-            cost.append(newCost!) // adding it to the array.
+            items.append(Partname.text!) // this is appending the part into the part array
+            cost.append(newCost!) // this is adding into the cost array
             print("I am adding shit to the items array")
             print(items)
             print(cost)
+            // now we have to store the results to mem
+            UserDefaults.standard.set(items, forKey: "SavedParts")
+            UserDefaults.standard.set(cost, forKey: "SavedPrices")
+            UserDefaults.standard.synchronize()
         }
 
     }
