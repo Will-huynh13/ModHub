@@ -4,3 +4,7 @@ In this app, I am able to see how many parts I have installed on the car, what e
 as see the total cost of all the mods. This app is just a personal project of mine therefore it will not be deployed on the 
 Appstore.
 
+
+## App Preview (Main menu)
+![Main](https://imgur.com/1oMT4YS)
+
