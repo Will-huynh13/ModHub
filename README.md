@@ -4,7 +4,8 @@ In this app, I am able to see how many parts I have installed on the car, what e
 as see the total cost of all the mods. The display menu is a tableView which allows me to scroll through my parts. This app is just a personal project of mine therefore it will not be deployed on the 
 Appstore.
 
-
+## My first prototype of the app
+![Prototype](https://github.com/Will-huynh13/ModHub/blob/master/ProtoType.jpg)
 ## App Preview
 ![Main menu](https://github.com/Will-huynh13/ModHub/blob/master/ModHub%20Main%20menu.jpg)
 ![Adding parts](https://github.com/Will-huynh13/ModHub/blob/master/ModHub%20Add%20parts%20menu.jpg)
