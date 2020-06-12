@@ -7,5 +7,5 @@ Appstore.
 
 ## App Preview (Main menu)
 ![Main menu](https://github.com/Will-huynh13/ModHub/blob/master/ModHub%20Main%20menu.jpg)
-![Adding parts] (https://github.com/Will-huynh13/ModHub/blob/master/ModHub%20Add%20parts%20menu.jpg)
+![Adding parts](https://github.com/Will-huynh13/ModHub/blob/master/ModHub%20Add%20parts%20menu.jpg)
 
