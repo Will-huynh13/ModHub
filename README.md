@@ -6,5 +6,5 @@ Appstore.
 
 
 ## App Preview (Main menu)
-![Main](https://imgur.com/1oMT4YS)
+![Main menu](https://github.com/Will-huynh13/ModHub/blob/master/ModHub%20Main%20menu.jpg)
 
