@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         NumParts.text = String(items.count) // counting the number of parts
         IndividualPartsCost.text = "$0"
         TotalCost.text = "$0"
-        print("Checking items array \(items)")
-        print("Checking cost array \(cost)")
+//        print("Checking items array \(items)")
+//        print("Checking cost array \(cost)")
         
     }
     @IBAction func UpdateButton(_ sender: Any) { // need to figure out how to remove a specific price when user removes it from the tableView
@@ -120,9 +120,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
             UserDefaults.standard.set(items, forKey: "SavedParts")
             UserDefaults.standard.set(cost, forKey: "SavedPrices")
             UserDefaults.standard.synchronize()
-            print("Now removing the selected element")
-            print("Checking parts \(items)")
-            print("Checking costs \(cost)")
+//            print("Now removing the selected element")
+//            print("Checking parts \(items)")
+//            print("Checking costs \(cost)")
         }
     }
 }
